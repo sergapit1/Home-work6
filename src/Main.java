@@ -22,6 +22,7 @@ public class Main {
             } catch (Exception e) {
                 System.err.println("Need to enter a number 0 - 10 : " + e);
 
+
             }
         }
     }
