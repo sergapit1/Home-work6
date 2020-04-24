@@ -2,37 +2,27 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        // int a = userInput();
-        // int b = userInput();
-        //  int c= userInput();
+    public static void main(String[] args) throws Exception {
 
-/*
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please, input: ");
 
-        Scanner sc = new Scanner(System.in);
-        boolean run = true;
-        String i ;
-        while (run= true) {
+        for (int i = 0; i < 3; i++) {
+            try {
+                int b = scanner.nextInt();
+                if (b > 0 && b <= 10) {
+                    System.out.println("Input correct: " + b);
 
-            System.out.print("Введите число: ");
-            int number = sc.nextInt();
-            if (number>0 && number<=10)
-                System.out.println("good job");
-            throw new NumberFormatException();
-           // try {
-              //  if (number != sc.nextInt()) {
+                } else {
+                    System.err.println("Error: " + b);
+                    i--;
+                    throw new NumberFormatException();
+                }
 
-              //     // run = false;
-              //  }
-
-/*
             } catch (Exception e) {
-                System.out.println("Ошибка: " + e.getLocalizedMessage());
+                System.err.println("Need to enter a number 0 - 10 : " + e);
+
             }
         }
-
     }
-
 }
-*/
-    }}
