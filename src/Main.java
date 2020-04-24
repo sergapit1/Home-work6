@@ -16,10 +16,8 @@ public class Main {
                     i--;
                     throw new NumberFormatException();
                 }
-
             } catch (Exception e) {
                 System.err.println("Need to enter a number 0 - 10 : " + e);
-
             }
         }
     }
